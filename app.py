@@ -6,11 +6,6 @@ import streamlit_wordcloud
 import pandas as pd
 from geopy import geocoders
 
-@st.cache
-def load_model():
-    return spacy.load("models/en")
-
-
 def main():
     menu = ["Home","Places","Persons","Organisations"]
 
@@ -29,7 +24,7 @@ def main():
 
 
 
-    nlp = spacy.load('models/en')
+    nlp = spacy.load('en_core_web_sm')
 
 
     if choice == "Home":
