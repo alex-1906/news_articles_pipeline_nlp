@@ -1,4 +1,6 @@
 pandas
+matplotlib
+numpy
 geopy==2.2.0
 spacy==3.2.4
 streamlit==1.8.1
